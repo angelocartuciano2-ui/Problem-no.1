@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inventory Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>GELO's Inventory</h1>
+
+  <input type="text" id="name" placeholder="Ingredient Name">
+
+  <input type="date" id="expiry">
+
+  <button onclick="addItem()">
+    Add Item
+  </button>
+
+  <h3>
+    At Risk Items:
+    <span id="count">0</span>
+  </h3>
+
+  <div id="list"></div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

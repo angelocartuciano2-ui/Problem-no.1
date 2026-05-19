@@ -1,7 +1,7 @@
 body {
   font-family: Arial;
   padding: 20px;
-  background-color: khaki;
+  background: linear-gradient(to right, rgb(255, 0, 242), rgb(233, 176,19));
 }
 
 input {

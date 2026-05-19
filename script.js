@@ -48,5 +48,14 @@ items.sort(function(a, b) {
       risk++;
     }
 
+  list.innerHTML += `
+      <div class="item ${color}">
+        <b>${items[i].name}</b>
+        <br>
+        Expires: ${items[i].expiry}
+      </div>
+    `;
   }
+
+  document.getElementById("count").innerText = risk;
 }

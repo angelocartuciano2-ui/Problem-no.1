@@ -25,4 +25,28 @@ function showItems() {
   let risk = 0;
 
   
+items.sort(function(a, b) {
+
+    return new Date(a.expiry) - new Date(b.expiry);
+
+  });
+
+  for (let i = 0; i < items.length; i++) {
+
+    let today = new Date();
+
+    let exp = new Date(items[i].expiry);
+
+    let diff = exp - today;
+
+    let days = diff / (1000 * 60 * 60 * 24);
+
+    let color = "green";
+
+    if (days < 2) {
+      color = "red";
+      risk++;
+    }
+
+  }
 }
